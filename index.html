@@ -1,467 +1,1185 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Yue Liu - Homepage</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="author" content="Yue (Knox) Liu">
-		<meta name="description" content="Yue (Knox) Liu - Computer Science Ph.D. Candidate at Monash University" />
-		<meta name="keywords" content="Liu, Yue (Knox), Monash University, Ph.D, Candidate, Research" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
-		<link rel="manifest" href="site.webmanifest">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollzer.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-	
-		<style>
-		.research-services-content {
-				text-align: left;
-				font-size: 0.7em;
-		}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yue (Knox) Liu</title>
+    <meta name="author" content="Yue (Knox) Liu">
+    <meta name="description" content="Yue (Knox) Liu - Research Scientist at Singapore Management University. Research in trustworthy AI for software development.">
+    <meta name="keywords" content="Yue Liu, Knox Liu, Software Engineering, AI, Cybersecurity, Research Scientist, SMU">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-		.research-services-content ul {
-			padding-left: 20px;
-		}
+        :root {
+            --accent: #1e3a5f;
+            --accent-light: #2d5986;
+            --accent-bg: #f0f4f8;
+            --warm: #c8a45c;
+            --text: #2d3748;
+            --text-light: #64748b;
+            --text-muted: #94a3b8;
+            --border: #e2e8f0;
+            --bg-alt: #f8fafc;
+            --sidebar-w: 320px;
+        }
 
-		.research-services-content li {
-			margin-bottom: 5px;
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			}
-		</style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 14.5px;
+            line-height: 1.65;
+            color: var(--text);
+            background: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
 
-	</head>
-	<body>
+        a { color: var(--accent-light); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--accent); }
 
-		<!-- Header -->
-			<div id="header" class="skel-layers-fixed">
+        /* ===== Two-Column Layout ===== */
+        .page-wrap {
+            display: flex;
+            min-height: 100vh;
+        }
 
-				<div class="top">
+        /* ===== Left Profile Sidebar ===== */
+        .profile-sidebar {
+            width: var(--sidebar-w);
+            flex-shrink: 0;
+            background: linear-gradient(180deg, #1a3350 0%, var(--accent) 40%, #162d4a 100%);
+            color: rgba(255,255,255,0.85);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 48px 28px 32px;
+            text-align: center;
+        }
 
-					<!-- Logo -->
-						<div id="logo">
-							<!-- <span class="image avatar48"><img src="images/logo.png" alt="" /></span> -->
-							<h1 id="title">Knox(Yue) Liu</h1>
-							<p>Ph.D. Candidate in Information Technology</p>
-							<p>Monash University, Australia</p>
-						</div>
+        .profile-sidebar::-webkit-scrollbar { width: 0; }
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#about" id="interests-link" class="skel-layers-ignoreHref"><span class="icon fa-dot-circle-o">About Me</span></a></li>
-								<!-- <li><a href="#curriculum" id="curriculum-link" class="skel-layers-ignoreHref"><span class="icon fa-address-card-o">Curriculum</span></a></li> -->
-								<!-- <li><a href="#job-search" id="job-search-link" class="skel-layers-ignoreHref"><span class="icon fa-search">Job Search</span></a></li> -->
-								<li><a href="#publications" id="publications-link" class="skel-layers-ignoreHref"><span class="icon fa-file-text-o">Publications</span></a></li>
-								<!-- <li><a href="#chatresearch" id="chatresearch-link" class="skel-layers-ignoreHref"><span class="icon fa-flask">ChatResearch</span></a></li> -->
-								<li><a href="#research-services" id="research-services-link" class="skel-layers-ignoreHref"><span class="icon fa-users">Research Services</span></a></li>
-								<li><a href="#honors-funding" id="honors-funding-link" class="skel-layers-ignoreHref"><span class="icon fa-trophy">Honors</span></a></li>
-								<li><a href="#teaching" id="teaching-link" class="skel-layers-ignoreHref"><span class="icon fa-edit">Teaching</span></a></li>
-								<!-- <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About</span></a></li> -->
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-						
-				</div>
-				
-				<div class="bottom">
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255,255,255,0.2);
+            margin-bottom: 20px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/yue-knox-liu-49305a25b/" class="icon fa-linkedin-square" target="_blank"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://scholar.google.com/citations?user=waVL0PgAAAAJ" class="icon fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
-							<li><a href="https://github.com/yueyueL" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li> 
-							<li><a href="yue.liu1@monash.edu" target="_top" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							<li style="margin-bottom: 20px;"><a href='https://clustrmaps.com/site/1bz7f'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=4d93e6&w=70&t=n&d=D5tZhZZVZCmKE0aDtTewPv3alaujo8v943a1EhlpYwM&co=353b40'/></a></li>
-						</ul>
-				
-				</div>
-			
-			</div>
+        .profile-photo:hover {
+            transform: scale(1.05);
+            border-color: var(--warm);
+        }
 
-		<!-- Main -->
-			<div id="main">
+        .profile-sidebar h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 6px;
+            letter-spacing: -0.3px;
+        }
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+        .profile-sidebar .title {
+            font-size: 12.5px;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 4px;
+            line-height: 1.5;
+        }
 
-							<header>
-								<!-- <h2 class="alt">Hi! I'm <strong>Yue Liu</strong>,</h2> -->
-								<!-- <p>Computer Science Ph.D. Candidate at Monash University, Australia</p> -->
-							</header>
-							
+        .profile-sidebar .affiliation {
+            font-size: 12.5px;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 24px;
+        }
 
-						</div>
-					</section>
-				
-					
-				<!-- Interests -->
-					<section id="about" class="two">
-						<div class="container">
-					
-							<header> 
-								<h2 class="icon fa-dot-circle-o"></h2><h2>About Me</h2>
-							</header>
-							
-							<p style="text-align: left;">I’m Knox Liu, a Ph.D. student at Monash University, with a research focus on software security and AI Alignment Research for software development.  I’m deeply passionate about harnessing the power of artificial intelligence to enhance and secure the software development lifecycle. My goal is to develop methodologies and tools that ensure the reliability and safety of AI-driven software development applications. Particularly, I am trying to explore the following research questions:</p>
-							<ol style="text-align: left; list-style-type: square;">
-								<li>How reliable AI-driven software development applications?</li>
-								<li>How can we improve the reliability of AI-driven software development applications?</li>
-								<li>What best practices should software developers follow to ensure reliable AI-driven software development?</li>
-							  </ol>
-							  <p style="text-align: left;">
-								If they look interesting to you, let's see more about my 
-								<a href="research.html" style="text-decoration: underline;">research</a> and 
-								<a href="#publications" style="text-decoration: underline;">publications</a>.
-							</p>
-							<p style="text-align: left;">
-								<em ><strong style="text-align: left;">Research interests:</strong></em>
-							</p>	
-							<p style="text-align: left;"> 
-								<a href="./securty.html"><img src="https://img.shields.io/badge/Topic-Software Security-blue"> </a> 
-								<a href="./llm.html"><img src="https://img.shields.io/badge/Topic-Large Language Models for Software Engineering-green"> </a> 
-								<a href="./software.html"><img src="https://img.shields.io/badge/Topic-Software Development Applications-purple"></a>
-							</p>
-							<p style="text-align: left;">
-								I'm also open to connections and collaborations now. Whether you're an experienced researcher, have an interesting project idea, or are a junior looking for guidance, I'm eager to hear from you. Feel free to <a href="#contact" style="text-decoration: underline;">contact me</a> to discuss potential opportunities.
-							</p>
-						</div>
-					</section>
+        /* Sidebar nav */
+        .sidebar-nav {
+            width: 100%;
+            margin-bottom: 28px;
+        }
 
-				<!-- curriculum -->
-				<!-- <section id="curriculum" class="three">
-					<div class="container">
-				
-						<header> 
-							<h2 class="icon fa-address-card-o"></h2><h2>Curriculum Vitae</h2>
-						</header>
-						
-						<p><a href="publications/CV.pdf" class="icon fa-address-card-o" target="_blank"> My CV/Resume is available here</a></p>
-						<p></p><a href="https://www.linkedin.com/in/yue-liu-49305a25b/" class="icon fa-linkedin-square" target="_blank"> My Linkedin profile is available here</a></p>
-						
-					</div>
-				</section> -->
+        .sidebar-nav a {
+            display: block;
+            padding: 7px 16px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.55);
+            border-radius: 6px;
+            transition: all 0.2s;
+            text-align: left;
+        }
 
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: #fff;
+            background: rgba(255,255,255,0.08);
+        }
 
-				<!-- <section id="job-search" class="four">
-					<div class="container">
-						<header>
-							<h2 class="icon fa-search"></h2><h2>Job Search</h2>
-						</header>
-						<p>I am currently in the job market, actively seeking research scientist or software development positions. With my expertise in reliable and secure Large Language Models (LLMs) for software development, as well as my experience in mobile app security and advanced software development tools, I am eager to continue contributing to cutting-edge research and development in these fields.</p>
-						<p>If you have any opportunities that align with my skills and interests, please feel free to reach out to me. I am excited to discuss how I can contribute to your organization's goals and projects.</p>
-					</div>
-				</section> -->
+        .sidebar-nav a.active {
+            border-left: 3px solid var(--warm);
+            padding-left: 13px;
+        }
 
-					<!-- Publications -->
-					<section id="publications" class="five">
-						<div class="container">
+        .sidebar-nav a i {
+            width: 20px;
+            text-align: center;
+            margin-right: 8px;
+            font-size: 12px;
+        }
 
-							<header>
-								<h2 class="icon fa-file-text-o"></h2><h2>Publications</h2>
-							</header>
-							<h3>Ph.D. Thesis</h3>
-							<br>
+        /* Sidebar social links */
+        .sidebar-social {
+            display: flex;
+            gap: 12px;
+            margin-top: auto;
+            padding-top: 24px;
+        }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        .sidebar-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            font-size: 15px;
+            transition: all 0.2s;
+        }
 
-							<div class="publication">
-							<div class="publicationButton">
-								<a href="presentations/thesis_slide.pdf" class="icon fa-file-text-o"></a>
-								<a href="presentations/thesis_slide.pdf" class="icon fa-file-powerpoint-o"></a>
-							</div>
-							
-							<b class="titlePublication">Towards Reliable LLM-based Software Development Tools</b><br>
-							<b class="me">Yue Liu</b><br>
-							<b class="conference">If you are interested in my work, please refer to my presentation slides in the meantime. The completed dissertation will be uploaded soon after the final review process.</b>
-							</div><br>								
+        .sidebar-social a:hover {
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+        }
 
+        /* ===== Main Content ===== */
+        .main-content {
+            flex: 1;
+            min-width: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
+        /* Top accent bar */
+        .top-bar {
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--warm));
+        }
 
+        .content-inner {
+            max-width: 820px;
+            padding: 0 48px;
+        }
 
+        section {
+            padding: 36px 0;
+            border-bottom: 1px solid var(--border);
+        }
 
-							<h3>International Journals</h3>
-								<br>
+        section:last-of-type { border-bottom: none; }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        section h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
+        section h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+            margin-left: 12px;
+        }
 
-								<div class="publication">
-									<div class="publicationButton">
-									<a href="https://arxiv.org/abs/2302.09587" class="icon fa-file-text-o"></a>
-									<a href="https://github.com/yueyueL/ProgramGen-LMs-Reliability" class="icon fa-github"></a>
-									<a href="https://sites.google.com/view/programgen-lms-reliability/" class="icon fa-globe"></a>
-									</div>
-									<b class="titlePublication">On the Reliability and Explainability of Language Models for Program Generation</b><br>
-									<b class="me">Yue Liu</b>, Chakkrit Tantithamthavorn, Yonghui Liu, and Li Li<br>
-									<b class="conference">ACM Transactions on Software Engineering and Methodology (<b class="me"><a href="https://tosem.acm.org/" target="_blank">TOSEM 2024</a></b>), to appear <b><em>(Core A*, CCF A)</em></b></b>
-								</div><br>
-								
+        section h2 i {
+            font-size: 14px;
+            color: var(--warm);
+        }
 
+        /* ===== Highlights strip ===== */
+        .highlights {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, var(--accent-bg), #f0f0f8);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text);
+        }
 
-								<div class="publication">
-									<div class="publicationButton">
-										<a href="https://arxiv.org/abs/2307.12596" class="icon fa-file-text-o"></a>
-										<a href="https://github.com/yueyueL/ChatGPT-CodeGenAnalysis" class="icon fa-github"></a>
-										<a href="https://sites.google.com/view/chatgpt-codegenanalysis/" class="icon fa-globe"></a>
-									</div>
-									<b class="titlePublication">Refining ChatGPT-Generated Code: Characterizing and Mitigating Code Quality Issues</b><br>
-									<b class="me">Yue Liu</b>, Thanh Le-Cong, Ratnadira Widyasari, Chakkrit Tantithamthavorn, Li Li, Xuan-Bach D. Le, and David Lo<br>
-									<b class="conference">ACM Transactions on Software Engineering and Methodology (<b class="me"><a href="https://tosem.acm.org/" target="_blank">TOSEM 2024</a></b>), to appear <b><em>(Core A*, CCF A)</em></b></b>
-								</div><br>
+        .highlight-item .hl-num {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+        }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->								
+        .highlight-item .hl-label {
+            font-size: 12px;
+            color: var(--text-light);
+            line-height: 1.3;
+        }
 
-								<div class="publication"> 
-									<div class="publicationButton">
-									<a href="https://dl.acm.org/doi/abs/10.1145/3544968" class="icon fa-file-text-o"></a>
-									<a href="https://github.com/yueyueL/DL-based-Android-Malware-Defenses-review" class="icon fa-github"></a>
-									</div>
-									<b class="titlePublication">Deep Learning for Android Malware Defenses: a Systematic Literature Review</b><br>
-									<b class="me">Yue Liu</b>, Chakkrit Tantithamthavorn, Li Li, and Yepang Liu<br>
-									<b class="conference">ACM Computing Surveys (<b class="me"><a href="https://dl.acm.org/journal/csur" target="_blank">CSUR 2022</a></b>), 55(8): 1-36 <b><em>(Core A*, SCI-Q1)</em></b></b>
-								</div><br>
-								
+        /* ===== Education ===== */
+        .edu-list {
+            list-style: none;
+            font-size: 13.5px;
+        }
 
-								<div class="publication">
-									<div class="publicationButton">
-										<a href="https://arxiv.org/abs/2209.07048" class="icon fa-file-text-o"></a>
-									</div>
-	
-									<b class="titlePublication">Automatically Recommend Code Updates: Are We There Yet?</b><br>
-									<b class="me">Yue Liu</b>, Chakkrit Tantithamthavorn, Yonghui Liu, Patanamon Thongtanunam, Li Li<br>
-									<b class="conference">ACM Transactions on Software Engineering and Methodology (<b class="me"><a href="https://tosem.acm.org/" target="_blank">TOSEM 2024</a></b>), to appear <b><em>(Core A*, CCF A)</em></b></b>
-								</div><br>
-	
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->								
+        .edu-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: baseline;
+        }
 
-								<h3>Pre-Prints</h3>
-								<br>
+        .edu-list li:last-child { border-bottom: none; }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        .edu-degree {
+            font-weight: 600;
+            color: var(--text);
+        }
 
+        .edu-school {
+            color: var(--text-light);
+            font-size: 13px;
+        }
 
+        .edu-year {
+            color: var(--text-muted);
+            font-size: 12.5px;
+            flex-shrink: 0;
+        }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-								<div class="publication">
-								<div class="publicationButton">
-									<a href="https://arxiv.org/abs/2310.17903" class="icon fa-file-text-o"></a>
-									<a href="https://github.com/yueyueL/ReliableLM4Code" class="icon fa-github"></a>
-									<a href="https://yueyuel.github.io/ReliableLM4Code/" class="icon fa-globe"></a>
+        /* ===== Courses ===== */
+        .courses-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
 
-								</div>
-								<b class="titlePublication">Pitfalls in Language Models for Code Intelligence: A Taxonomy and Survey</b><br>
-								Xinyu She, <b class="me">Yue Liu</b>, Yanjie Zhao, Yiling He, Li Li, Chakkrit Tantithamthavorn, Zhan Qin, and Haoyu Wang <br>
-								</div><br>
+        .course-chip {
+            padding: 4px 12px;
+            font-size: 12.5px;
+            background: var(--accent-bg);
+            color: var(--accent);
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            transition: all 0.2s;
+        }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-								<div class="publication">
-								<div class="publicationButton">  
-									<a href="https://arxiv.org/abs/2308.10620" class="icon fa-file-text-o"></a>
-								</div>
-								<b class="titlePublication">Large Language Models for Software Engineering: A Systematic Literature Review</b><br>
-								Xinyi Hou, Yanjie Zhao, <b class="me">Yue Liu</b>, Zhou Yang, Kailong Wang, Li Li, Xiapu Luo, David Lo, John Grundy, and Haoyu Wang<br>
-								</div><br>
+        .course-chip:hover {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        /* ===== About / Intro ===== */
+        .intro-text {
+            font-size: 15px;
+            color: var(--text);
+            line-height: 1.75;
+            margin-bottom: 20px;
+        }
 
-								
-								<h3>International Conferences</h3>
-								<br>
+        .intro-text strong { color: var(--accent); }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        .research-pillars {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 16px;
+        }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-								<div class="publication">
-									<div class="publicationButton">
-									<a href="https://ieeexplore.ieee.org/document/9978981" class="icon fa-file-text-o"></a>
-									<a href="https://github.com/yueyueL/XAIforAndroidMalware" class="icon fa-github"></a>
-									<a href="https://sites.google.com/view/xaiforandromalware/" class="icon fa-globe"></a>
-									</div>
-									<b class="titlePublication">Explainable AI for Android Malware Detection: Towards Understanding Why the Models Perform So Well?</b><br>
-									<b class="me">Yue Liu</b>, Chakkrit Tantithamthavorn, Li Li, and Yepang Liu<br>
-									<b class="conference">33rd International Symposium on Software Reliability Engineering (<b class="me"><a href="https://issre2022.github.io/" target="_blank">ISSRE 2022</a></b>), 169-180 <b><em>(Core A, CCF B)</em></b></b>
-								</div><br>
+        .pillar {
+            padding: 14px 16px;
+            background: var(--bg-alt);
+            border-radius: 8px;
+            border-left: 3px solid var(--warm);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        .pillar:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
 
-								<div class="publication">
-									<div class="publicationButton">
-									<a href="https://ieeexplore.ieee.org/document/8790057" class="icon fa-file-text-o"></a>
-									</div>
-									<b class="titlePublication">Island model genetic algorithm for feature selection in non-traditional credit risk evaluation</b><br>  
-									<b class="me">Yue Liu</b>, Adam Ghandar, and Georgios Theodoropoulos<br>
-									<b class="conference">IEEE congress on evolutionary computation (CEC), June 2019, 2771-2778 <b><em>(Core B)</em></b></b>
-								</div><br>
-  
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        .pillar:nth-child(1) { border-left-color: #2563eb; }
+        .pillar:nth-child(2) { border-left-color: #7c3aed; }
+        .pillar:nth-child(3) { border-left-color: #059669; }
+        .pillar:nth-child(4) { border-left-color: var(--warm); }
 
-								<div class="publication">
-									<div class="publicationButton">  
-									<a href="https://ieeexplore.ieee.org/abstract/document/8759117" class="icon fa-file-text-o"></a>
-									</div>
-									<b class="titlePublication">A metaheuristic strategy for feature selection problems: Application to credit risk evaluation in emerging markets</b><br>
-									<b class="me">Yue Liu</b>, Adam Ghandar, and Georgios Theodoropoulos<br>  
-									<b class="conference">2019 IEEE Conference on Computational Intelligence for Financial Engineering and Economics (CIFEr), May 2019, 1-7</b>
-								</div><br>
-																
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        .pillar-label {
+            font-size: 12.5px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 3px;
+        }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+        .pillar-desc {
+            font-size: 12.5px;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
 
+        /* ===== Tags ===== */
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
 
+        .tag {
+            padding: 3px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 20px;
+            letter-spacing: 0.3px;
+        }
 
-						<h3>Workshops</h3>
-						<br>
-						<div class="publication">
-							<div class="publicationButton">
-							<a href="https://ieeexplore.ieee.org/abstract/document/10298755/" class="icon fa-file-text-o"></a>  
-							</div>
-							<b class="titlePublication">Detecting Temporal Inconsistency in Biased Datasets for Android Malware Detection</b><br>
-							Haonan Hu, <b class="me">Yue Liu</b>, Yanjie Zhao, Yonghui Liu, Xiaoyu Sun, Chakkrit Tantithamthavorn, and Li Li<br>
-							<b class="conference">38th IEEE/ACM International Conference on Automated Software Engineering Workshops (<b class="me"><a href="https://conf.researchr.org/track/ase-2023/asew-2023-papers#About" target="_blank">ASEW 2023</a></b>), 17-23 </b>  
-						</div><br>
+        .tag-se { background: #dbeafe; color: #1e40af; }
+        .tag-ai { background: #d1fae5; color: #065f46; }
+        .tag-sec { background: #ede9fe; color: #5b21b6; }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-						<div class="publication">
-							<div class="publicationButton">
-							<a href="https://arxiv.org/abs/2007.02821" class="icon fa-file-text-o"></a>
-							</div>  
-							<b class="titlePublication">Online NEAT for Credit Evaluation--a Dynamic Problem with Sequential Data</b><br>
-							<b class="me">Yue Liu</b>, Adam Ghandar, and Georgios Theodoropoulos<br>
-							<b class="conference">2nd KDD Workshop on Anomaly Detection in Finance, August 2019 </b>
-						</div><br>
+        /* ===== News ===== */
+        .news-list {
+            list-style: none;
+            font-size: 13.5px;
+        }
 
+        .news-list li {
+            padding: 7px 0;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            gap: 14px;
+            align-items: baseline;
+        }
 
+        .news-list li:last-child { border-bottom: none; }
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-	
-						</div>
-					</section>
+        .news-date {
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            min-width: 44px;
+            flex-shrink: 0;
+            background: var(--accent);
+            padding: 1px 8px;
+            border-radius: 10px;
+            text-align: center;
+        }
 
-				<section id="research-services" class="six">
-					<div class="container">
-						<header>
-							<h2 class="icon fa-users"></h2><h2>Research Services</h2>
-						</header>
-						<div class="research-services-content">
-							<h3>Program Committee Member</h3>
-							<ul>
-								<li><strong>AAAI 2024</strong>: The 38th Annual AAAI Conference on Artificial Intelligence, Undergraduate Consortium (Core A*)</li>
-								<li><strong>MSR 2025</strong>: International Conference on Mining Software Repositories, Junior Program Committee (Core A)</li>
-								<li><strong>MSR 2023</strong>: International Conference on Mining Software Repositories, Junior Program Committee (Core A)</li>
-							</ul>
-							
-							<h3>Journal Reviewer</h3>
-							<ul>
-								<li><strong>TSE</strong>: IEEE Transactions on Software Engineering (Core A*)</li>
-								<li><strong>TMC</strong>: IEEE Transactions on Mobile Computing (Core A*)</li>
-								<li><strong>IEEE Software</strong></li>
-							</ul>
-							
-							<h3>Conference Reviewer</h3>
-							<ul>
-								<li><strong>WWW 2024</strong>: The International World Wide Web Conference (Core A*)</li>
-								<li><strong>EACL 2023</strong>: The 18th Conference of the European Chapter of the Association for Computational Linguistics (Core A)</li>
-								<li><strong>NeurIPS 2024</strong>: The 4th Workshop on Mathematical Reasoning and AI</li>
-							</ul>
-							
-						</div>
-					</div>
-				</section>
+        .news-list strong { color: var(--accent); }
 
-				<!-- New Honors and Funding section -->
-				<section id="honors-funding" class="three">
-					<div class="container">
-						<header>
-							<h2 class="icon fa-trophy"></h2><h2>Honors and Funding</h2>
-						</header>
-						<ul>
-							<li>Researcher Access Program Funding, OpenAI, 2024</li>
-							<li>Google Cloud Research Credits, 2025</li>
-							<li>Postgraduate Publications Award, Monash University, 2024</li>
-						</ul>
-					</div>
-				</section>
+        /* ===== Publications ===== */
+        .pub-note-top {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
 
-				<!-- Teaching -->
-					<section id="teaching" class="eight">
-						<div class="container">
-							
-							<header>
-								<h2 class="icon fa-edit"></h2><h2>Teaching</h2>
-							</header>
-							
-							<h3>Spring 2022</h3>
-							FIT3077 Software Engineering: Architecture and Design - Teaching Assistant, Monash University<br>
-							FIT2099 Object oriented Design and Implementation - Teaching Assistant, Monash University<br>
-							
-							<h3>Fall 2022</h3>  
-							FIT1051 Programming fundamentals in Java - Teaching Assistant, Monash University<br>
-							
-							<h3>Fall 2018</h3>
-							CS203 Data Structure and Algorithm Analysis - Teaching Assistant, SUSTech<br>
-							
-							<h3>Spring 2018</h3>
-							CS209 Computer System Design and Application - Teaching Assistant, SUSTech<br>
-							CS201 Computer Organization Principle - Teaching Assistant, SUSTech<br>
-							
-							<h3>Fall 2017</h3>
-							CS209 Computer System Design and Application - Teaching Assistant, SUSTech<br>
-						</div>
-					</section>
+        .pub-group h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 22px 0 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed var(--border);
+        }
 
+        .pub-group:first-child h3 { margin-top: 0; }
 
-				<!-- About Me -->
-					<!-- <section id="about" class="three">
-						<div class="container">
+        .pub-item {
+            padding: 10px 8px;
+            margin: 0 -8px;
+            font-size: 13.5px;
+            line-height: 1.55;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
 
-							<header>
-								<h2 class="icon fa-user"></h2><h2>About Me</h2>
-							</header>
-							<p>Hi! I'm Yue Liu, a Ph.D. candidate in the Department of Information Technology at Monash University, Australia, advised by Dr. Chakkrit Tantithamthavorn and Dr. Li Li. My research focuses on developing reliable and secure Large Language Models (LLMs) for software development, aiming to enhance developer productivity and software quality.</p>
-							<p>I received my Bachelor's degree in Computer Science from Southern University of Science and Technology (SUSTech) in 2019.</p>
-						</div>
-					</section> -->
-			
-				<!-- Contact -->
-				<section id="contact" class="nine contact dark cover">
-					<div class="container">
-						<header>
-							<h2 class="icon fa-envelope"></h2><h2>Contact</h2>
-						</header>
-						<p>I'm open to connections and collaborations now, please don't hesitate to reach out to me via email:</p>
-						<p><strong>Email</strong>: yue.liu1@monash.edu</p>
-					</div>
-				</section>
-			
-			</div>
+        .pub-item:hover {
+            background: var(--bg-alt);
+        }
 
-		<!-- Footer -->
-			<div id="footer">
-				
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Knox Liu</li><li><a href="http://www.monash.edu/" id="advisor-link" target="_blank" class="icon fa-university">   Monash University</a></li>
-					</ul>
-				
-			</div>
+        .pub-item + .pub-item { border-top: 1px solid #f1f5f9; }
 
-	</body>
+        .pub-title {
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .pub-authors { color: var(--text-light); font-size: 13px; }
+        .pub-authors .me { color: var(--accent); font-weight: 600; }
+
+        .pub-venue {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .pub-venue .rank {
+            font-style: normal;
+            font-weight: 700;
+            color: #059669;
+        }
+
+        .pub-links {
+            margin-top: 4px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .pub-links a {
+            font-size: 11.5px;
+            color: var(--text-light);
+            border: 1px solid var(--border);
+            padding: 1px 8px;
+            border-radius: 3px;
+            transition: all 0.15s;
+        }
+
+        .pub-links a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .pub-award {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            color: #b45309;
+            font-weight: 700;
+            font-style: normal;
+            margin-left: 6px;
+        }
+
+        .pub-note {
+            font-size: 11.5px;
+            color: var(--text-muted);
+            font-style: normal;
+            margin-left: 6px;
+        }
+
+        /* ===== Service ===== */
+        .service-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .service-col h3 {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .service-col ul {
+            list-style: none;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .service-col li { padding: 2px 0; }
+        .service-col strong { color: var(--text); font-weight: 600; }
+
+        /* ===== Awards ===== */
+        .awards-list {
+            list-style: none;
+            font-size: 13.5px;
+        }
+
+        .awards-list li {
+            padding: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .award-year {
+            color: var(--text-muted);
+            font-size: 12.5px;
+            flex-shrink: 0;
+        }
+
+        /* ===== Teaching ===== */
+        .teaching-group { margin-bottom: 14px; }
+
+        .teaching-group h3 {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+
+        .teaching-group ul {
+            list-style: none;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .teaching-group li { padding: 2px 0; }
+
+        /* ===== Contact ===== */
+        .contact-text {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 14px;
+        }
+
+        .contact-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-row a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13.5px;
+            color: var(--text-light);
+            padding: 6px 14px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .contact-row a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-bg);
+        }
+
+        /* ===== Footer ===== */
+        .site-footer {
+            padding: 20px 0;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+        }
+
+        /* ===== Mobile ===== */
+        .mobile-header {
+            display: none;
+            background: var(--accent);
+            color: #fff;
+            padding: 16px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 200;
+        }
+
+        .mobile-header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mobile-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .mobile-toggle {
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px 8px;
+        }
+
+        .mobile-nav {
+            display: none;
+            padding: 8px 0;
+        }
+
+        .mobile-nav.open { display: block; }
+
+        .mobile-nav a {
+            display: block;
+            padding: 6px 0;
+            color: rgba(255,255,255,0.6);
+            font-size: 13.5px;
+        }
+
+        .mobile-nav a:hover { color: #fff; }
+
+        @media (max-width: 900px) {
+            .profile-sidebar { display: none; }
+            .mobile-header { display: block; }
+            .content-inner { padding: 0 20px; }
+            .research-pillars { grid-template-columns: 1fr; }
+            .service-grid { grid-template-columns: 1fr; }
+
+            .awards-list li {
+                flex-direction: column;
+                gap: 1px;
+            }
+
+            /* Show a compact profile at top of content on mobile */
+            .mobile-profile {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding: 20px 0;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .mobile-profile img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .mobile-profile-info .mp-title {
+                font-size: 12px;
+                color: var(--text-muted);
+            }
+
+            .mobile-profile-info .mp-bio {
+                font-size: 13px;
+                color: var(--text-light);
+                margin-top: 4px;
+            }
+
+            .mobile-social {
+                display: flex;
+                gap: 12px;
+                margin-top: 8px;
+            }
+
+            .mobile-social a {
+                font-size: 14px;
+                color: var(--text-light);
+            }
+
+            .mobile-social a:hover { color: var(--accent); }
+        }
+
+        @media (min-width: 901px) {
+            .mobile-profile { display: none !important; }
+        }
+
+        /* ===== Scroll reveal ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== Back to top ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s, transform 0.3s, background 0.2s;
+            z-index: 50;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: var(--accent-light);
+        }
+
+        /* ===== Contact hover shadow ===== */
+        .contact-row a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-bg);
+            box-shadow: 0 2px 8px rgba(30,58,95,0.1);
+        }
+
+        /* ===== Awards first item highlight ===== */
+        .awards-list li:first-child {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        /* ===== Alternating section tint (no negative margins) ===== */
+    </style>
+</head>
+<body>
+
+<!-- Mobile Header -->
+<div class="mobile-header">
+    <div class="mobile-header-row">
+        <h1>Knox Liu</h1>
+        <button class="mobile-toggle" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about" onclick="document.getElementById('mobileNav').classList.remove('open')">About</a>
+        <a href="#education" onclick="document.getElementById('mobileNav').classList.remove('open')">Education</a>
+        <a href="#news" onclick="document.getElementById('mobileNav').classList.remove('open')">News</a>
+        <a href="#publications" onclick="document.getElementById('mobileNav').classList.remove('open')">Publications</a>
+        <a href="#service" onclick="document.getElementById('mobileNav').classList.remove('open')">Service</a>
+        <a href="#awards" onclick="document.getElementById('mobileNav').classList.remove('open')">Awards</a>
+        <a href="#teaching" onclick="document.getElementById('mobileNav').classList.remove('open')">Teaching</a>
+        <a href="#contact" onclick="document.getElementById('mobileNav').classList.remove('open')">Contact</a>
+    </div>
+</div>
+
+<div class="page-wrap">
+
+    <!-- Left Profile Sidebar (desktop) -->
+    <aside class="profile-sidebar">
+        <img class="profile-photo" src="images/photo.png" alt="Yue (Knox) Liu">
+        <h1>Yue (Knox) Liu</h1>
+        <div class="title">Research Scientist</div>
+        <div class="affiliation">Singapore Management University</div>
+        <div style="font-size:11px; color:rgba(255,255,255,0.4); margin-bottom:20px; line-height:1.6;">
+            Ph.D., Monash University<br>
+            B.S., SUSTech
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+            <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+            <a href="#news"><i class="fa-solid fa-bolt"></i> News</a>
+            <a href="#publications"><i class="fa-solid fa-file-lines"></i> Publications</a>
+            <a href="#service"><i class="fa-solid fa-users"></i> Service</a>
+            <a href="#awards"><i class="fa-solid fa-trophy"></i> Awards</a>
+            <a href="#teaching"><i class="fa-solid fa-chalkboard-user"></i> Teaching</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </nav>
+
+        <div class="sidebar-social">
+            <a href="https://scholar.google.com/citations?user=waVL0PgAAAAJ" target="_blank" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+            <a href="https://github.com/yueyueL" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yue-knox-liu-49305a25b/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:yuehhhliu@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="top-bar"></div>
+        <div class="content-inner">
+
+            <!-- Mobile profile (shown only on small screens) -->
+            <div class="mobile-profile">
+                <img src="images/photo.png" alt="Yue (Knox) Liu">
+                <div class="mobile-profile-info">
+                    <div class="mp-title">Research Scientist &middot; Singapore Management University</div>
+                    <div class="mp-bio">Trustworthy AI for software development</div>
+                    <div class="mobile-social">
+                        <a href="https://scholar.google.com/citations?user=waVL0PgAAAAJ" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
+                        <a href="https://github.com/yueyueL" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/yue-knox-liu-49305a25b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:yuehhhliu@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About -->
+            <section id="about" class="reveal">
+                <h2><i class="fa-solid fa-microscope"></i> About</h2>
+
+                <div class="tags">
+                    <span class="tag tag-se">Software Engineering</span>
+                    <span class="tag tag-ai">Artificial Intelligence</span>
+                    <span class="tag tag-sec">Cybersecurity</span>
+                </div>
+                <p class="intro-text">
+                    I'm a Research Scientist at Singapore Management University, building agentic vulnerability detection systems for government software products in collaboration with GovTech Singapore. I obtained my Ph.D. from Monash University (2024), advised by Chakkrit Tantithamthavorn and Li Li.
+                </p>
+                <p class="intro-text">
+                    My research aims to make <strong>AI-powered software development trustworthy in practice</strong>. I have published 15+ papers in top-tier venues (ICSE, ASE, TOSEM) and received an ACM SIGSOFT Distinguished Paper Award. My research for AI systems has helped improve popular AI development tools including OpenClaw, Zed, VMware, and SWE-agent.
+                </p>
+                <p class="intro-text">
+                    I care deeply about <strong>democratizing AI for software development</strong>. With AI, anyone can now become a software developer. But not every developer comes from the same background or community.  I am dedicated to making AI coding tools accessible, inclusive, and empowering for developers of all backgrounds and skill levels.
+                </p>
+
+                <div class="research-pillars">
+                    <div class="pillar">
+                        <div class="pillar-label">AI Models for Code</div>
+                        <div class="pillar-desc">Evaluation, reliability, and explainability of AI models in software engineering</div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-label">Development Ecosystems</div>
+                        <div class="pillar-desc">Security of IDE plugins, agentic editors, and AI coding tools</div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-label">AI Solutions</div>
+                        <div class="pillar-desc">Quality, security, and self-repair of code produced by AI systems</div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-label">Human Factors</div>
+                        <div class="pillar-desc">Developer perception, trust, and adoption of AI coding tools</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section id="education" class="reveal">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                <ul class="edu-list">
+                    <li>
+                        <div>
+                            <div class="edu-degree">Ph.D. in Information Technology</div>
+                            <div class="edu-school">Monash University, Australia &mdash; Advisors: Chakkrit Tantithamthavorn, Li Li, Chetan Arora</div>
+                        </div>
+                        <span class="edu-year">2021&ndash;2024</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="edu-degree">B.S. in Computer Science</div>
+                            <div class="edu-school">Southern University of Science and Technology, China</div>
+                        </div>
+                        <span class="edu-year">2015&ndash;2019</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- News -->
+            <section id="news" class="reveal">
+                <h2><i class="fa-solid fa-bolt"></i> News</h2>
+                <ul class="news-list">
+                    <li>
+                        <span class="news-date">2025</span>
+                        <span>Joined <strong>Singapore Management University</strong> as a Research Scientist, collaborating with GovTech Singapore.</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2025</span>
+                        <span>Paper on users' perception of AI coding assistants received the <strong>ACM SIGSOFT Distinguished Paper Award</strong> at ASE 2025.</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2025</span>
+                        <span>Paper on security of framework-constrained program generation accepted at <strong>ICSE 2026</strong>.</span>
+                    </li>
+                    <li>
+                        <span class="news-date">2024</span>
+                        <span>Successfully defended my Ph.D. thesis at <strong>Monash University</strong>.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Publications -->
+            <section id="publications" class="reveal">
+                <h2><i class="fa-solid fa-file-lines"></i> Selected Publications</h2>
+                <p class="pub-note-top">Full list on <a href="https://scholar.google.com/citations?user=waVL0PgAAAAJ" target="_blank">Google Scholar</a>.</p>
+
+                <div class="pub-group">
+                    <h3>Conference Papers</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-title">When AI Takes the Wheel: Security Analysis of Framework-Constrained Program Generation</div>
+                        <div class="pub-authors"><span class="me">Yue Liu</span>, Zhenchang Xing, Shidong Pan, and Chakkrit Tantithamthavorn</div>
+                        <div class="pub-venue">ICSE 2026 <span class="rank">(Core A*, CCF A)</span></div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2510.16823" target="_blank">PDF</a>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">"My productivity is boosted, but ..." Demystifying Users' Perception on AI Coding Assistants</div>
+                        <div class="pub-authors">Yunbo Lyu, Zhou Yang, Jieke Shi, Jianming Chang, <span class="me">Yue Liu</span>, David Lo</div>
+                        <div class="pub-venue">ASE 2025 <span class="rank">(Core A*, CCF A)</span> <span class="pub-award"><i class="fa-solid fa-award"></i> Distinguished Paper</span></div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2508.12285" target="_blank">PDF</a>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">Protect Your Secrets: Understanding and Measuring Data Exposure in VSCode Extensions</div>
+                        <div class="pub-authors"><span class="me">Yue Liu</span>, Chakkrit Tantithamthavorn, and Li Li</div>
+                        <div class="pub-venue">SANER 2025, 551&ndash;562 <span class="rank">(Core A, CCF B)</span></div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">Explainable AI for Android Malware Detection: Towards Understanding Why the Models Perform So Well?</div>
+                        <div class="pub-authors"><span class="me">Yue Liu</span>, Chakkrit Tantithamthavorn, Li Li, and Yepang Liu</div>
+                        <div class="pub-venue">ISSRE 2022, 169&ndash;180 <span class="rank">(Core A, CCF B)</span></div>
+                        <div class="pub-links">
+                            <a href="https://ieeexplore.ieee.org/document/9978981" target="_blank">PDF</a>
+                            <a href="https://github.com/yueyueL/XAIforAndroidMalware" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-group">
+                    <h3>Journal Papers</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-title">Pitfalls in Language Models for Code Intelligence: A Taxonomy and Survey</div>
+                        <div class="pub-authors">Xinyu She, <span class="me">Yue Liu</span>, Yanjie Zhao, Yiling He, Li Li, Chakkrit Tantithamthavorn, Zhan Qin, and Haoyu Wang</div>
+                        <div class="pub-venue">ACM TOSEM, 2025 <span class="rank">(Core A*, CCF A)</span></div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2310.17903" target="_blank">PDF</a>
+                            <a href="https://github.com/yueyueL/ReliableLM4Code" target="_blank">Code</a>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">On the Reliability and Explainability of Language Models for Program Generation</div>
+                        <div class="pub-authors"><span class="me">Yue Liu</span>, Chakkrit Tantithamthavorn, Yonghui Liu, and Li Li</div>
+                        <div class="pub-venue">ACM TOSEM, 2024, 33(5): 1&ndash;26 <span class="rank">(Core A*, CCF A)</span></div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2302.09587" target="_blank">PDF</a>
+                            <a href="https://github.com/yueyueL/ProgramGen-LMs-Reliability" target="_blank">Code</a>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">Refining ChatGPT-Generated Code: Characterizing and Mitigating Code Quality Issues</div>
+                        <div class="pub-authors"><span class="me">Yue Liu</span>, Thanh Le-Cong, Ratnadira Widyasari, Chakkrit Tantithamthavorn, Li Li, Xuan-Bach D. Le, and David Lo</div>
+                        <div class="pub-venue">ACM TOSEM, 2024, 33(5): 1&ndash;26 <span class="rank">(Core A*, CCF A)</span> <span class="pub-note">Top 15 Most Downloaded</span></div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2307.12596" target="_blank">PDF</a>
+                            <a href="https://github.com/yueyueL/ChatGPT-CodeGenAnalysis" target="_blank">Code</a>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">Automatically Recommend Code Updates: Are We There Yet?</div>
+                        <div class="pub-authors"><span class="me">Yue Liu</span>, Chakkrit Tantithamthavorn, Yonghui Liu, Patanamon Thongtanunam, and Li Li</div>
+                        <div class="pub-venue">ACM TOSEM, 2024, 33(8): 1&ndash;27 <span class="rank">(Core A*, CCF A)</span></div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2209.07048" target="_blank">PDF</a>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">Large Language Models for Software Engineering: A Systematic Literature Review</div>
+                        <div class="pub-authors">Xinyi Hou, Yanjie Zhao, <span class="me">Yue Liu</span>, Zhou Yang, Kailong Wang, Li Li, Xiapu Luo, David Lo, John Grundy, and Haoyu Wang</div>
+                        <div class="pub-venue">ACM TOSEM, 2024, 33(8): 1&ndash;79 <span class="rank">(Core A*, CCF A)</span> <span class="pub-note">Top 5 Most Downloaded</span></div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2308.10620" target="_blank">PDF</a>
+                        </div>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">Deep Learning for Android Malware Defenses: a Systematic Literature Review</div>
+                        <div class="pub-authors"><span class="me">Yue Liu</span>, Chakkrit Tantithamthavorn, Li Li, and Yepang Liu</div>
+                        <div class="pub-venue">ACM Computing Surveys, 2022, 55(8): 1&ndash;36 <span class="rank">(Core A*, SCI-Q1)</span></div>
+                        <div class="pub-links">
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3544968" target="_blank">PDF</a>
+                            <a href="https://github.com/yueyueL/DL-based-Android-Malware-Defenses-review" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-group">
+                    <h3>Preprints / Under Review</h3>
+
+                    <div class="pub-item">
+                        <div class="pub-title">"Your AI, My Shell": Demystifying Prompt Injection Attacks on Agentic AI Coding Editors</div>
+                        <div class="pub-authors"><span class="me">Yue Liu</span>, Yanjie Zhao, Yunbo Lyu, Ting Zhang, Haoyu Wang, and David Lo</div>
+                        <div class="pub-venue">Under review, 2025</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2509.22040" target="_blank">PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Service -->
+            <section id="service" class="reveal">
+                <h2><i class="fa-solid fa-users"></i> Professional Service</h2>
+                <div class="service-grid">
+                    <div class="service-col">
+                        <h3>Program Committee</h3>
+                        <ul>
+                            <li><strong>WWW</strong> 2026</li>
+                            <li><strong>MSR</strong> 2023, 2026</li>
+                            <li><strong>IUI</strong> 2026</li>
+                            <li><strong>IJCAI</strong> 2025</li>
+                            <li><strong>IJCNN</strong> 2025</li>
+                        </ul>
+                    </div>
+                    <div class="service-col">
+                        <h3>Journal Reviewer</h3>
+                        <ul>
+                            <li><strong>TSE</strong>, <strong>TOSEM</strong>, <strong>TMC</strong></li>
+                            <li><strong>IST</strong>, <strong>JSS</strong>, <strong>ASE Journal</strong></li>
+                            <li><strong>IEEE Software</strong>, <strong>KAIS</strong></li>
+                        </ul>
+                    </div>
+                    <div class="service-col">
+                        <h3>Conference Reviewer</h3>
+                        <ul>
+                            <li><strong>ICSE</strong> 2024</li>
+                            <li><strong>WWW</strong> 2025</li>
+                            <li><strong>COLING</strong> 2025</li>
+                            <li><strong>IUI</strong> 2025</li>
+                            <li><strong>AAAI</strong> UC 2025</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards -->
+            <section id="awards" class="reveal">
+                <h2><i class="fa-solid fa-trophy"></i> Awards &amp; Honors</h2>
+                <ul class="awards-list">
+                    <li><span>ACM SIGSOFT Distinguished Paper Award, ASE 2025</span><span class="award-year">2025</span></li>
+                    <li><span>Researcher Access Program Funding, OpenAI</span><span class="award-year">2024&ndash;2025</span></li>
+                    <li><span>Google Cloud Research Credits</span><span class="award-year">2025</span></li>
+                    <li><span>Postgraduate Publications Award, Monash University</span><span class="award-year">2024</span></li>
+                    <li><span>Ph.D. Scholarship (Full Time), Monash University</span><span class="award-year">2019&ndash;2024</span></li>
+                    <li><span>Excellent Undergraduate Thesis, SUSTech</span><span class="award-year">2019</span></li>
+                </ul>
+            </section>
+
+            <!-- Teaching -->
+            <section id="teaching" class="reveal">
+                <h2><i class="fa-solid fa-chalkboard-user"></i> Teaching</h2>
+                <div class="teaching-group">
+                    <h3>Monash University, Australia</h3>
+                    <ul>
+                        <li>FIT3077 Software Engineering: Architecture and Design &mdash; TA, Spring 2022</li>
+                        <li>FIT2099 Object-Oriented Design and Implementation &mdash; TA, Spring 2022</li>
+                        <li>FIT1051 Programming Fundamentals in Java &mdash; TA, Fall 2022</li>
+                    </ul>
+                </div>
+                <div class="teaching-group">
+                    <h3>Southern University of Science and Technology, China</h3>
+                    <ul>
+                        <li>CS203 Data Structures and Algorithm Analysis &mdash; TA, Fall 2018</li>
+                        <li>CS209 Computer System Design and Application &mdash; TA, Spring 2018, Fall 2017</li>
+                        <li>CS201 Computer Organization Principle &mdash; TA, Spring 2018</li>
+                    </ul>
+                </div>
+
+                <h3 style="font-size:13.5px; font-weight:600; color:var(--text); margin-top:20px; margin-bottom:8px;">Prepared to Teach</h3>
+                <div class="courses-grid">
+                    <span class="course-chip">Introduction to Programming</span>
+                    <span class="course-chip">Data Structures & Algorithms</span>
+                    <span class="course-chip">Object-Oriented Programming</span>
+                    <span class="course-chip">Database Systems</span>
+                    <span class="course-chip">Software Testing</span>
+                    <span class="course-chip">Software Architecture</span>
+                    <span class="course-chip">Software Analysis</span>
+                    <span class="course-chip">Program Analysis</span>
+                    <span class="course-chip">AI for Software Engineering</span>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="reveal">
+                <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+                <p class="contact-text">I am actively seeking <strong style="color:var(--accent);">Lecturer / Assistant Professor</strong> and <strong style="color:var(--accent);">Research Scientist</strong> positions. I am also open to research collaborations. Feel free to reach out.</p>
+                <div class="contact-row">
+                    <a href="mailto:yuehhhliu@gmail.com"><i class="fa-solid fa-envelope"></i> yuehhhliu@gmail.com</a>
+                    <a href="https://scholar.google.com/citations?user=waVL0PgAAAAJ" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Scholar</a>
+                    <a href="https://github.com/yueyueL" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/yue-knox-liu-49305a25b/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                &copy; 2025 Yue (Knox) Liu &middot; Built with care
+            </footer>
+        </div>
+    </main>
+</div>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+
+// Active nav highlight on scroll + back-to-top visibility
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.sidebar-nav a');
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 80) current = s.id;
+    });
+    navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+    backToTop.classList.toggle('show', window.scrollY > 400);
+});
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            revealObserver.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.1 });
+revealEls.forEach(el => revealObserver.observe(el));
+</script>
+
+</body>
 </html>
