@@ -591,6 +591,35 @@
             font-size: 12px;
             color: var(--text-muted);
             border-top: 1px solid var(--border);
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .footer-note {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .traffic-widget-wrap {
+            width: 128px;
+            height: 58px;
+            overflow: hidden;
+            margin-left: auto;
+        }
+
+        .traffic-widget {
+            width: 300px;
+            opacity: 0.32;
+            transform: scale(0.43);
+            transform-origin: top right;
+            filter: saturate(0.75);
+            transition: opacity 0.2s ease;
+        }
+
+        .traffic-widget:hover {
+            opacity: 0.55;
         }
 
         /* ===== Mobile ===== */
@@ -692,6 +721,16 @@
             }
 
             .mobile-social a:hover { color: var(--accent); }
+
+            .traffic-widget-wrap {
+                width: 108px;
+                height: 48px;
+            }
+
+            .traffic-widget {
+                transform: scale(0.36);
+                opacity: 0.22;
+            }
         }
 
         @media (min-width: 901px) {
@@ -1130,7 +1169,12 @@
             </section>
 
             <footer class="site-footer">
-                &copy; 2025 Yue (Knox) Liu &middot; Built with care
+                <span class="footer-note">&copy; 2025 Yue (Knox) Liu &middot; Built with care</span>
+                <div class="traffic-widget-wrap" aria-label="Visitor map">
+                    <div class="traffic-widget">
+                        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=D5tZhZZVZCmKE0aDtTewPv3alaujo8v943a1EhlpYwM&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+                    </div>
+                </div>
             </footer>
         </div>
     </main>
